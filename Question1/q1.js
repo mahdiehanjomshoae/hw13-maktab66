@@ -5,7 +5,7 @@ $(document).ready(function () {
         i++;
         const markup = "<tr><td> <button type='button' class='btn btn-danger delete-row'>Delete</button> <button type='button'class='btn btn-primary  clone-row'>Clone</button></td> <td> <input type='number' class='form-control anctive__input' /></td> <td><input type='text' class='form-control anctive__input' /></td> <td><div class='d-flex justify-content-evenly'><label class='click__envalid'><input value='0'name='group-" + i + "' type='radio'> New</label>      <label class='click__envalid'><input value='1' name='group-" + i + "' type='radio'>   In progress</label>  <label class='click__confirmed'><input value='2' name='group-" + i + "' type='radio'> Confirmed</label></div></td></tr>";
 
-        $("table").append(markup);
+        $("tbody").prepend(markup);
         updateItemsCount(1);
         checkNotConfirmed();
     });
