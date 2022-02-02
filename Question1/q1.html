@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./q1.css">
+    <i class="bi bi-subtract  npm i bootstrap-icons"></i>
+</head>
+
+<body>
+    <div class="p-5">
+        <!-- butoon -->
+        <button type="button" class="my-3 add-row" style="background-color:#009e00;border: white; border-radius: 5px;padding: 10px; color: white;">Add row</button>
+        <!-- tabel -->
+        <table class="table table table-bordered">
+            <thead>
+                <tr style="background-color: #009e00;color: white;">
+                    <th scope="col">Actions</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-danger delete-row">Delete</button>
+                        <button type="button" class="btn btn-primary  clone-row">Clone</button>
+                    </td>
+                    <td>
+                        <input type="number" class="form-control anctive__input" />
+                    </td>
+                    <td>
+                        <input type="text" class="form-control anctive__input" />
+                    </td>
+                    <td>
+                        <div class="d-flex justify-content-evenly">
+                            <label class="click__envalid"> <input value="0" name="group1" type="radio" /> <span>New</span> </label>
+                            <label class="click__envalid"> <input value="1" name="group1" type="radio" /> <span>In progress</span> </label>
+                            <label class="click__confirmed"> <input value="2" name="group1" type="radio" /> <span>Confirmed</span> </label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="nnn">
+            All rows number:<span id="d1">1</span>
+        </p>
+        <p>
+            Not confirmed rows number:<span id="d2">0</span>
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./q1.js"></script>
+</body>
+
+</html>
